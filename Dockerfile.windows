@@ -6,8 +6,8 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0-nanoserver-ltsc2022 AS build
 WORKDIR /source
 
 # Copy everything in this project and build app
-COPY . ./sirkuit4dedge/
-WORKDIR /source/sirkuit4dedge
+COPY . ./bbni4d/
+WORKDIR /source/bbni4d
 RUN dotnet publish -c release -o /app 
 
 # final stage/image
@@ -23,4 +23,4 @@ ENV PORT 80
 EXPOSE 80
 
 # Start the app
-ENTRYPOINT ["dotnet", "sirkuit4dedge.dll"]
+ENTRYPOINT ["dotnet", "bbni4d.dll"]

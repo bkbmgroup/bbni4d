@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace sirkuit4dedge.Pages;
+namespace bbni4d.Pages;
 
 public class PrivacyModel : PageModel
 {
